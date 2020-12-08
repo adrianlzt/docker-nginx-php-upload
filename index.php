@@ -14,7 +14,7 @@
 <?PHP
   if(!empty($_FILES['uploaded_file']))
   {
-    $path = "/data/uploads/";
+    $path = "/var/www/html/uploads/";
     $path = $path . basename( $_FILES['uploaded_file']['name']);
 
     if(move_uploaded_file($_FILES['uploaded_file']['tmp_name'], $path)) {
